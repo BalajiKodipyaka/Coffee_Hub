@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BrewHouse — Coffee Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#"><img src="logo.png" alt="BrewHouse logo" class="logo-img" onerror="this.style.display='none'"><span class="logo-text">BrewHouse</span></a>
+      <nav id="nav" class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#video">Tutorial</a></li>
+        </ul>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-overlay">
+        <div class="container hero-content">
+          <h1>BrewHouse — Coffee & Vibes</h1>
+          <p>Handcrafted coffees, cozy space, and the best beans in town.</p>
+          <a class="btn" href="#menu">See Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="section">
+      <div class="container">
+        <h2 class="section-title">Our Menu</h2>
+        <div class="menu-grid">
+          <article class="menu-item">
+            <img src="Espresso.jpg" width = "300">
+            <div class="menu-body">
+              <h3>Espresso</h3>
+              <p>Rich, bold single-shot espresso.</p>
+              <span class="price">₹120</span>
+            </div>
+          </article>
+
+          <article class="menu-item">
+            <img src="Cappuccino.jpg" width = "300">
+            <div class="menu-body">
+              <h3>Cappuccino</h3>
+              <p>Velvety milk foam over rich espresso.</p>
+              <span class="price">₹160</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section alt">
+      <div class="container about-grid">
+        <div>
+          <h2>About BrewHouse</h2>
+          <p>We roast small-batch beans and craft each cup with attention and love.</p>
+        </div>
+        <div class="about-image">
+          <img src="cafe interior.jpg" width = "300">
+        </div>
+      </div>
+    </section>
+
+    <!-- EMBED TUTORIAL -->
+    <section id="video" class="section">
+      <div class="container">
+        <h2 class="section-title">Follow the Tutorial</h2>
+        <!-- Embedded YouTube tutorial (opens in page) -->
+        <div class="video-wrap">
+          <iframe width="100%" height="420" src="https://www.youtube.com/embed/MYFgtnKMDp4" title="YouTube tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="muted">Video used as reference: "Create A Responsive Coffee Website in HTML CSS & JavaScript".</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container contact-grid">
+        <form id="contact-form" class="contact-form">
+          <label>Name<input type="text" name="name" required></label>
+          <label>Phone<input type="tel" name="phone" required></label>
+          <label>Message<textarea name="message" rows="3"></textarea></label>
+          <button type="submit" class="btn">Send</button>
+        </form>
+        <div class="contact-info">
+          <h3>Visit Us</h3>
+          <p>123 Coffee Lane, Your City</p>
+          <p>Open: 7:00 — 21:00</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> BrewHouse</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
